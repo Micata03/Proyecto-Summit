@@ -417,6 +417,12 @@ rect{
   top: -10vh;
   left: 1vh;
 }
+@media (min-width:1300px){
+  .banner .tex1{
+    width: 600px;
+    left: 20%;
+  }
+}
 .banner img{
   width: 15rem;
   position: relative;
@@ -436,9 +442,18 @@ rect{
 
 
 }
+@media (min-width:1300px){
+  .img1{
+    left: 21.5%;
+    width: 80%;
+  }
+  
+}
+
+
 .columna1{
   min-height: 90vh;
-  background-image: url(../media/moderON-1.png);
+  background-image: url(../media/moderOn-1.png);
   background-position: center;
   background-size: cover;
 }
@@ -449,6 +464,8 @@ rect{
   top: 35%;
   left: 10%;
 }
+
+
 .modeOn span{
   text-transform:uppercase ;
   font-size: 3.8rem;
@@ -469,6 +486,13 @@ rect{
   
   
 }
+@media (min-width:1300px){
+  .columna2, .hola{
+    font-size: 3.5rem;
+    
+  }
+  
+}
 .columna2, .palermo{
   margin-top: 2%; 
   font-size: 3.8rem;
@@ -478,8 +502,21 @@ rect{
   
 
 }
+@media (min-width:1300px){
+  .columna2, .palermo{
+    font-size: 4.8rem;
+    
+  }
+  
+}
 .columna2 button{
   margin-top: 45%;
+}
+@media (min-width:1300px){
+  .columna2 button{
+    margin-top: 35%;
+  }
+  
 }
 .columna2 img{
   margin-top: 15%;
@@ -495,6 +532,11 @@ rect{
   min-height: 63%;
   margin: 0;
 }
+@media (min-width:1300px){
+  .columna3, .iconos{
+    min-height: 56%;
+  }
+} 
 
 
 .columna3 h2{
@@ -502,13 +544,25 @@ rect{
   text-transform: uppercase;
   font-weight: 300;
   margin-left: 10%;
-  margin-top: -15%;
+  margin-top: 32%;
 }
+@media (min-width:1300px){
+  .columna3 h2{
+    font-size: 2.5rem;
+  }
+} 
 .columna3 h2 span{
   text-transform: uppercase;
   font-size: 3.5rem;
   font-weight: 400;
 }
+
+@media (min-width:1300px){
+  .columna3 h2 span{
+    font-size: 4.5rem;
+    
+  }
+} 
 .columna3 button{
   margin-top: 5%;
 }
@@ -523,7 +577,7 @@ rect{
   padding-top: 20%;
   margin-left: 15%;
 
-}*/
+}
 .iconos{ 
 
   display: grid;
@@ -552,7 +606,7 @@ rect{
   font-size: 0.7rem;
   
   display: block;
-}
+}*/
 .titulo{
   font-weight: 400;
 }
@@ -573,6 +627,13 @@ rect{
 
 
 }
+@media (min-width:1300px){
+  .columna5 img{
+    width: 45%;
+    margin-left: 28%;
+  }
+  
+} 
 .columna5 ul li{
   line-height: 2;
 }
@@ -586,6 +647,12 @@ rect{
   font-size: 1.1rem;
   line-height: 1.7;
 }
+
+@media (min-width:1300px){
+ .columna6 p::before{
+   left: 30rem;
+ }
+} 
 .columna6 h4{
   margin-left: -45%;
   font-size: 1.5rem;
@@ -609,6 +676,7 @@ rect{
 .columna7 h1{
   font-size: 2rem;
   font-weight: 300;
+  margin-top: 5vh;
   
   margin-bottom: 3vh;
 }
@@ -619,10 +687,24 @@ rect{
 .columna7 button{
   margin-bottom: 3vh;
 }
+@media (min-width:1300px){
+  .columna7 button{
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+  
+  }
+} 
 .columna7 ul li{
   margin-bottom: 4vh;
   font-size: 1rem;
+ 
 }
+@media (min-width:1300px){
+  .columna7 ul li{
+    line-height: 2rem;
+
+  }
+} 
 .columna8{
   min-height: 70vh;
 
@@ -758,6 +840,9 @@ rect{
   .columna5 img{
     display: none;
   }
+  .columna3, .wrapper{
+    display: none;
+  }
   .columna6{
     background-color: rgba(0, 0, 0, 5);
      opacity: 2.9;
@@ -767,7 +852,7 @@ rect{
     z-index: 1;
   }  
   .columna5 h2{
-    margin-top: -40%;
+    margin-top: -13%;
     margin-bottom: 10%;
   }
   .columna5 ul li{
@@ -796,12 +881,12 @@ rect{
   #unidades{
     margin-top: 0;
   }
-  .columna7{
-     background-color: rgba(0, 0, 0, 4);
-     opacity: 2.9;
+  .columna7{    
+    min-height: 100vh; 
     background-image: url("../media/interiorismo1.png");
     background-position: center;
     background-size: cover;
+    /*position: relative;*/
    
 
   }
@@ -812,9 +897,14 @@ rect{
   .columna7 span{
     font-size: 2.5rem;
   }
- .columna7 ul li{
-  color: #000;
-  font-size: 0.8rem;
+ .columna7 .text-overlay{
+  position: relative;
+  
+  padding: 1rem;
+  font-size: 0.80rem;
+  font-weight: 300;
+  color: white;
+  backdrop-filter: blur(4px) brightness(73%);
  }
  .columna8{
   min-height: 0;
@@ -836,3 +926,88 @@ rect{
     display: none;
   }
 }
+
+
+
+
+
+
+.wrapper .outer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+}
+.wrapper .card{
+  background: transparent;
+  width: 430px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  justify-content: space-between;
+  
+  animation: animated 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+}
+.card{
+  border: none;
+}
+.outer:hover .card{
+  animation-play-state: paused;
+}
+.wrapper .card:last-child{
+  animation-delay: calc(-3s * var(--delay));
+}
+@keyframes animated {
+  0%{
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%, 20%{
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%, 40%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60%{
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%, 100%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+.card .content{
+  display: flex;
+  align-items: center;
+}
+.wrapper .card .img{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: -5px;
+  
+  padding: 5px;
+ 
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  
+  object-fit: cover;
+}
+.card .details{
+  margin-left: 80px;
+}
+.details span{
+  font-weight: 600;
+  font-size: 18px;
+}
+
